@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#emailik::placeholder, #navrhVSvypocet::placeholder, #navr_ceny::placeholder{
+    font-size: 14px;
+    text-align: center;
+}
+
+.green{
+    background-color: green;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.red{
+    background-color: red;
+    color: whitesmoke;
+    text-align: center;
+}

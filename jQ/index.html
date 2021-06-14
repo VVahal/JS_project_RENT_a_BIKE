@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQ cviko</title>
+</head>
+
+<body>
+    <h3>Pujcovna Kol:</h3>
+    <form name="checkboxy" id="vyberkola">
+        <label for="horske">Horske 500kc/den</label>
+        <input type="checkbox" name="c1" id="horske" value="500">
+        <input type="number" name="number" class="number" id="horske_cislo" min="0" value="0"><br>
+        <label for="detske">Detske 200kc/den</label>
+        <input type="checkbox" name="c2" id="detske" value="200">
+        <input type="number" name="number" class="number" id="detske_cislo" min="0" value="0"><br>
+        <label for="silnicni">Silnicni 1500kc/den</label>
+        <input type="checkbox" name="c3" id="silnicni" value="1500">
+        <input type="number" name="number" class="number" id="silnicni_cislo" min="0" value="0"><br>
+        <label for="gravel">Gravel 2500kc/den</label>
+        <input type="checkbox" name="c4" id="gravel" value="2500">
+        <input type="number" name="number" class="number" id="gravel_cislo" min="0" value="0"><br>
+
+    </form>
+    <h4>Pocet dnu zapujceni:</h4>
+    <form name="roletka" id="roletka">
+        <select name="pocet_dnu" id="pocet_dnu" size="1">
+            <option selected value="1">1 den</option>
+            <option value="7">7 dni</option>
+            <option value="14">2 tydny</option>
+            <option value="21">3 tydny</option>
+        </select> <br>
+    </form>
+    <h4>Vypujceni cyklonosice:</h4>
+    <form name="radio" id="radio">
+        <label for="ch1">cyklonosič střešní (+ 5 procent z celkové ceny zápůjčky navíc)</label>
+        <input type="radio" name="ch1" id="ch1" value="0.05"><br>
+        <label for="ch2">cyklonosič na tažné zařízení (+ 10 procent z celkové ceny zápůjčky navíc)</label>
+        <input type="radio" name="ch1" id="ch2" value="0.1"><br>
+        <label for="ch3">není třeba cyklonosič</label>
+        <input type="radio" name="ch1" id="ch3" value="0"><br><br>
+    </form>
+    <form name="vysledek" id="vysledek">
+        <input type="button" value="Vypocti cenu" id="vysledekbtn"> <span id="cena_celkem_span"> Celkova
+            cena:</span><br><br>
+        <input type="text" id="navr_ceny" placeholder="Zadej cenu "><br><br>
+        <input type="text" id="navrhVSvypocet" placeholder="navrh VS vypocet ceny">
+    </form>
+    <h4>Kontaktni email:</h4>
+    <form name="email">
+        <input type="text" name="email" id="emailik" placeholder="Zde zadej email"><span id="vyzva"></span><br><br>
+        <input type="button" value="Odeslat" id="odeslat">
+
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
